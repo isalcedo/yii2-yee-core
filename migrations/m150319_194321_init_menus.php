@@ -43,6 +43,7 @@ class m150319_194321_init_menus extends yii\db\Migration
             'id' => Schema::TYPE_STRING.'(64) NOT NULL PRIMARY KEY',
             'menu_id' => $this->string(64)->notNull(),
             'link' => $this->string(255),
+            'class' => $this->string(255),
             'parent_id' => $this->string(64)->defaultValue(''),
             'image' => $this->string(24),
             'alwaysVisible' => $this->integer(1)->notNull()->defaultValue(0),
